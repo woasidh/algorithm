@@ -1,6 +1,65 @@
 # Python 정리
 
 ## 문자열
-<img src = './resource/image.png'></img>
-![notebook](https://user-images.githubusercontent.com/49011398/143473778-81a0dcd4-ec3f-4a56-af2f-3ba6af3eb7fc.png)
+
+### 문자열 곱셈
+```python
+'a'*5 = 'aaaaa'
+```
+
+### 문자열 슬라이싱
+```python
+phoneNumber = '01025012501';
+lastFourDigits = phoneNumber[-4:]; // 마지막 4자리
+firstFourDigits = phoneNumber[:4]; // 처음 4자리
+```
+
+## 배열
+
+### 배열 append
+```python
+# 특정 값 append
+arr = [];
+arr.append(1);
+
+# 배열끼리 concat
+arr1 = [1, 2, 3];
+arr2 = [4, 5, 6];
+joinedArr = arr1 + arr2;
+```
+
 ## 자료형
+
+### 문자열 - 숫자형 변환
+```python
+str = '1';
+num = 1;
+
+strToNum = int(str); // 1 
+numToStr = str(num); // '1'
+```
+
+### bool 연산자
+- python은 %% || 대신 and, or 사용
+
+
+
+## 유틸
+
+### print
+- 기본적으로 print('a)하면 print('a', end = '\n')
+- 개행없이 하고 싶으면 print('a', end = '')
+
+### 삼항 연산자
+```python
+age = 15;
+isOverFifteen = True if age > 15 else False;
+```
+
+### 동시 할당
+
+```python
+m = 10;
+n = 20;
+a, b = max(m, n), min(m, n);
+```
