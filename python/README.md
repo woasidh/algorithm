@@ -28,6 +28,35 @@ arr2 = [4, 5, 6];
 joinedArr = arr1 + arr2;
 ```
 
+#### 배열 정렬
+```python
+arr = [1, 3, 2];
+arr.sort(); // 오름차순 정렬
+arr.sort(reverse = True); // 내림차순 정렬
+```
+
+#### 배열 수정
+- index로 없애기
+```python
+arr = [0, 1, 2 ,3];
+del arr[-1];
+print(arr); // [0, 1, 2]
+```
+
+- vlaue로 없애기
+```python
+arr = [1, 3, 2, 3];
+arr.remove(3);
+print(arr); // [1, 2, 3] - 첫 원소만 없앰
+```
+
+- filter (List Comprehension)
+```python
+arr = [1, 3, 2, 3, 1];
+arr = [x for x in arr if x != 3]; // 3인 애들 모두 filter
+print(arr); // [1, 2, 1]
+```
+
 ## 자료형
 
 #### 문자열 - 숫자형 변환
