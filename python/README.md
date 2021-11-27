@@ -57,9 +57,24 @@ arr = [x for x in arr if x != 3]; // 3인 애들 모두 filter
 print(arr); // [1, 2, 1]
 ```
 
+#### 배열 복사
+```python
+arr = [1, 2, 3];
+tmpArr = arr[:];
+```
+
+#### map
+```python
+# 문자열로 이루어진 list를 정수형으로 변환하고 싶을 때
+arr = ['1', '2', '3'];
+arr = list(map(int, arr)); # map(함수, list/ tuple) 형식
+```
+
 ## 자료형
 
-#### 문자열 - 숫자형 변환
+#### 문자열
+
+- int형으로 변환
 ```python
 str = '1';
 num = 1;
@@ -68,9 +83,39 @@ strToNum = int(str); // 1
 numToStr = str(num); // '1'
 ```
 
+- 배열로 변환
+```python
+str = "Hello";
+arr = list(str); // ['H', 'e', 'l', 'l', 'o'];
+```
+
+#### 배열
+- 문자열로 변환
+```python
+arr = ['a', 'b', 'c'];
+str = ''.join(arr); #'abc'
+strWithDash = '/'.join(arr); #'a/b/c'
+```
+
+#### float형
+
+- int형을 변환
+```python
+a = 1.234;
+print(int(a)); //1
+```
+
+- int형인 지 판별
+```python
+a = 1.234;
+print(a.is_integer());
+
+# 추가
+print(a % 1 == 0); // 이거도 가능..
+```
+
 #### bool 연산자
 - python은 %% || 대신 and, or 사용
-
 
 
 ## 유틸
@@ -91,4 +136,20 @@ isOverFifteen = True if age > 15 else False;
 m = 10;
 n = 20;
 a, b = max(m, n), min(m, n);
+```
+
+#### 제곱근 구하기
+```python
+import math;
+
+num = 144;
+print(math.sqrt(num)); //12
+
+# 추가
+sqaureRoot = num ** (1/2); // 이거도 가능
+```
+
+#### for loop에서 index 구하기 
+```python
+for idx, vlaue in enumerate(word):
 ```
