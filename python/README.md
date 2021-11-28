@@ -33,6 +33,10 @@ joinedArr = arr1 + arr2;
 arr = [1, 3, 2];
 arr.sort(); // 오름차순 정렬
 arr.sort(reverse = True); // 내림차순 정렬
+
+# sorted 사용 가능 (새로운 배열 반환)
+sortedList = sorted(arr); # 인자로는 문자열, 배열, iterable한 객체는 모두 가능
+sortedList = sorted(arr, reverse = True); # 인자로는 문자열, 배열, iterable한 객체는 모두 가능
 ```
 
 #### 배열 수정
@@ -70,6 +74,30 @@ arr = ['1', '2', '3'];
 arr = list(map(int, arr)); # map(함수, list/ tuple) 형식
 ```
 
+#### 배열에서 value 찾기
+```python
+name = ['kim', 'park'];
+print(name.index('kim')); #0
+```
+
+#### 문자열로 변환
+```python
+arr = ['a', 'b', 'c'];
+str = ''.join(arr); #'abc'
+strWithDash = '/'.join(arr); #'a/b/c'
+```
+
+#### 문자열에 특정 value 있는 지 찾기 (튜플, 문자열에서도 가능)
+```python
+print( 's' in ['s', 'd']); # True
+```
+
+#### sort 커스터마이징
+```python
+strings = ['aa', 'aab', 'ac'];
+newList = sorted(strings, key = lambda x: (x[n], x));
+```
+
 ## 자료형
 
 #### 문자열
@@ -87,14 +115,6 @@ numToStr = str(num); // '1'
 ```python
 str = "Hello";
 arr = list(str); // ['H', 'e', 'l', 'l', 'o'];
-```
-
-#### 배열
-- 문자열로 변환
-```python
-arr = ['a', 'b', 'c'];
-str = ''.join(arr); #'abc'
-strWithDash = '/'.join(arr); #'a/b/c'
 ```
 
 #### float형
@@ -160,4 +180,14 @@ for idx, vlaue in enumerate(word):
 ord('a') # 97
 # int에서 char 구하기
 chr(97) # 'a'
+```
+
+#### 숫자인지 판별
+```python
+
+char1 = 'a';
+char2 = '1';
+
+print(char1.isdigit()); # false
+print(char2.isdigit()); # true
 ```
