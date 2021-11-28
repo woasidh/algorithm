@@ -153,3 +153,11 @@ sqaureRoot = num ** (1/2); // 이거도 가능
 ```python
 for idx, vlaue in enumerate(word):
 ```
+
+#### ascii 코드
+```python
+# char에서 int 구하기
+ord('a') # 97
+# int에서 char 구하기
+chr(97) # 'a'
+```
