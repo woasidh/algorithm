@@ -98,6 +98,12 @@ strings = ['aa', 'aab', 'ac'];
 newList = sorted(strings, key = lambda x: (x[n], x));
 ```
 
+#### 배열 특정 원소 가지고 있는 지 확인
+```python
+ arr = [1, 2, 3];
+ print(1 in arr); # True
+```
+
 ## 자료형
 
 #### 문자열
