@@ -10,8 +10,8 @@
 #### 문자열 슬라이싱
 ```python
 phoneNumber = '01025012501';
-lastFourDigits = phoneNumber[-4:]; // 마지막 4자리
-firstFourDigits = phoneNumber[:4]; // 처음 4자리
+lastFourDigits = phoneNumber[-4:]; # 마지막 4자리
+firstFourDigits = phoneNumber[:4]; # 처음 4자리
 ```
 
 #### 알파벳인지 판별하기
@@ -40,8 +40,8 @@ joinedArr = arr1 + arr2;
 #### 배열 정렬
 ```python
 arr = [1, 3, 2];
-arr.sort(); // 오름차순 정렬
-arr.sort(reverse = True); // 내림차순 정렬
+arr.sort(); # 오름차순 정렬
+arr.sort(reverse = True); # 내림차순 정렬
 
 # sorted 사용 가능 (새로운 배열 반환)
 sortedList = sorted(arr); # 인자로는 문자열, 배열, iterable한 객체는 모두 가능
@@ -53,21 +53,21 @@ sortedList = sorted(arr, reverse = True); # 인자로는 문자열, 배열, iter
 ```python
 arr = [0, 1, 2 ,3];
 del arr[-1];
-print(arr); // [0, 1, 2]
+print(arr); # [0, 1, 2]
 ```
 
 - vlaue로 없애기
 ```python
 arr = [1, 3, 2, 3];
 arr.remove(3);
-print(arr); // [1, 2, 3] - 첫 원소만 없앰
+print(arr); # [1, 2, 3] - 첫 원소만 없앰
 ```
 
 - filter (List Comprehension)
 ```python
 arr = [1, 3, 2, 3, 1];
-arr = [x for x in arr if x != 3]; // 3인 애들 모두 filter
-print(arr); // [1, 2, 1]
+arr = [x for x in arr if x != 3]; # 3인 애들 모두 filter
+print(arr); # [1, 2, 1]
 ```
 
 #### 배열 복사
@@ -122,14 +122,14 @@ newList = sorted(strings, key = lambda x: (x[n], x));
 str = '1';
 num = 1;
 
-strToNum = int(str); // 1 
-numToStr = str(num); // '1'
+strToNum = int(str); # 1 
+numToStr = str(num); # '1'
 ```
 
 - 배열로 변환
 ```python
 str = "Hello";
-arr = list(str); // ['H', 'e', 'l', 'l', 'o'];
+arr = list(str); # ['H', 'e', 'l', 'l', 'o'];
 ```
 
 #### float형
@@ -137,7 +137,7 @@ arr = list(str); // ['H', 'e', 'l', 'l', 'o'];
 - int형을 변환
 ```python
 a = 1.234;
-print(int(a)); //1
+print(int(a)); # 1
 ```
 
 - int형인 지 판별
@@ -146,7 +146,7 @@ a = 1.234;
 print(a.is_integer());
 
 # 추가
-print(a % 1 == 0); // 이거도 가능..
+print(a % 1 == 0); # 이거도 가능..
 ```
 
 #### bool 연산자
@@ -178,10 +178,10 @@ a, b = max(m, n), min(m, n);
 import math;
 
 num = 144;
-print(math.sqrt(num)); //12
+print(math.sqrt(num)); # 12
 
 # 추가
-sqaureRoot = num ** (1/2); // 이거도 가능
+sqaureRoot = num ** (1/2); # 이거도 가능
 ```
 
 #### for loop에서 index 구하기 
