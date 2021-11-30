@@ -14,6 +14,15 @@ lastFourDigits = phoneNumber[-4:]; // 마지막 4자리
 firstFourDigits = phoneNumber[:4]; // 처음 4자리
 ```
 
+#### 알파벳인지 판별하기
+```python
+alpha = 'a';
+nonAlpha = '1';
+
+print(alpha.isalpha()); # True
+print(nonAlpha.isalpha()); # False
+```
+
 ## 배열
 
 #### 배열 append
