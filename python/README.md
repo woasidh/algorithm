@@ -23,6 +23,14 @@ print(alpha.isalpha()); # True
 print(nonAlpha.isalpha()); # False
 ```
 
+#### 문자열 대체
+```python
+str = 'one2one';
+str = str.replace('one', 'two');
+print(str); # 'two2two'
+```
+
+
 ## 배열
 
 #### 배열 append
@@ -206,3 +214,8 @@ char2 = '1';
 print(char1.isdigit()); # false
 print(char2.isdigit()); # true
 ```
+
+#### call-by value? call-by-reference?
+- python은 immutable / mutable한 객체로 나뉨 (인자로 넘겨주는 데이터 타입에 따라 달라짐)
+- int,str같은 immutable한 애들 -> call by value
+- list, tuple같은 mutable한 애들 -> call by reference
