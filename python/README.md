@@ -4,7 +4,7 @@
 
 #### 문자열 곱셈
 ```python
-'a'*5 = 'aaaaa'
+# 'a'*5 = 'aaaaa'
 ```
 
 #### 문자열 슬라이싱
@@ -112,13 +112,13 @@ print( 's' in ['s', 'd']); # True
 #### sort 커스터마이징
 ```python
 strings = ['aa', 'aab', 'ac'];
-newList = sorted(strings, key = lambda x: (x[n], x));
+newList = sorted(strings, key = lambda x: (x[1], x)); # 2번째 char로 정렬
 ```
 
 #### 배열 특정 원소 가지고 있는 지 확인
 ```python
- arr = [1, 2, 3];
- print(1 in arr); # True
+arr = [1, 2, 3];
+print(1 in arr); # True
 ```
 
 ## 자료형
@@ -194,7 +194,9 @@ sqaureRoot = num ** (1/2); # 이거도 가능
 
 #### for loop에서 index 구하기 
 ```python
-for idx, vlaue in enumerate(word):
+word = [1, 2, 3, 4];
+for idx, value in enumerate(word):
+    print(idx, value);
 ```
 
 #### ascii 코드

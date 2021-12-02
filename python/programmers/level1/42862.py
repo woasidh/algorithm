@@ -11,8 +11,6 @@ def solution(n, lost, reserve):
     for i in reserve:
         total[i] += 1;
 
-    print(total);
-
     for idx, i in enumerate(total):
         if i == -1:
             continue;
@@ -45,5 +43,4 @@ def checkRight(arr, idx):
         return True;
     return False;
 
-print('hi');
 print(solution(5, [2, 4], [1, 3, 5]));
