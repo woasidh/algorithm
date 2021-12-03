@@ -234,3 +234,9 @@ a, b, = b, a;
 ```python
 if a > 5: continue;
 ```
+
+#### 배열 안에 여러 배열 넣기
+```python
+n = 10;
+nestedEmptyArrs = [[] for _ in range(0, n)];
+```
