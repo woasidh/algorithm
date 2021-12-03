@@ -229,3 +229,8 @@ a = 5;
 b = 4;
 a, b, = b, a;
 ```
+
+#### if문 한줄로
+```python
+if a > 5: continue;
+```
