@@ -221,3 +221,11 @@ print(char2.isdigit()); # true
 - python은 immutable / mutable한 객체로 나뉨 (인자로 넘겨주는 데이터 타입에 따라 달라짐)
 - int,str같은 immutable한 애들 -> call by value
 - list, tuple같은 mutable한 애들 -> call by reference
+
+#### swap
+- 파이썬 개쉬움 tmp 이딴거 필요없음
+```python
+a = 5;
+b = 4;
+a, b, = b, a;
+```
