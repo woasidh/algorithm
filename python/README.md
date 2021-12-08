@@ -160,6 +160,10 @@ print(a % 1 == 0); # 이거도 가능..
 #### bool 연산자
 - python은 %% || 대신 and, or 사용
 
+#### tuple
+```python
+t = tuple([1]); # (1)
+```
 
 ## 유틸
 
@@ -239,4 +243,12 @@ if a > 5: continue;
 ```python
 n = 10;
 nestedEmptyArrs = [[] for _ in range(0, n)];
+```
+
+#### combination, permutation
+```python
+from itertools import combinations, permutations
+arr = [1, 2, 3];
+combinations(arr, 2); #12 13 23
+permutations(arr, 2); # 12 13 21 23 31 32
 ```
