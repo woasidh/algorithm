@@ -252,3 +252,29 @@ arr = [1, 2, 3];
 combinations(arr, 2); #12 13 23
 permutations(arr, 2); # 12 13 21 23 31 32
 ```
+
+#### any, all
+- any: bool list중에 하나라도 True면
+- all: bool list중에 모두가 True인지
+```python
+arr = [1, 2, 3];
+print(any(i < 2 for i in arr)); # arr에 2보다 작은게 하나라도 있는지 - True
+print(all(i < 4 for i in arr)); # arr가 모두 4보다 작은 지 - True
+```
+
+#### 올림, 내림
+```python
+import math
+math.ceil()
+math.floor()
+```
+
+### class
+```python
+class Node:
+    __init__(self, num):
+        self.num = num;
+        
+    __lt__(self, other):
+        return self.num < other.num;
+```
