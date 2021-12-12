@@ -269,7 +269,7 @@ math.ceil()
 math.floor()
 ```
 
-### class
+####  class
 ```python
 class Node:
     __init__(self, num):
@@ -277,4 +277,18 @@ class Node:
         
     __lt__(self, other):
         return self.num < other.num;
+```
+
+
+#### 배열에서 특정 원소 index 찾기
+```python
+arr = [1, 2, 3];
+arr.index(1); # 0
+```
+
+#### product
+```python
+from itertools import product
+arr = [1, 2, 3];
+product(arr, repeat = 2);
 ```
