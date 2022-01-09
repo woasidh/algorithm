@@ -35,7 +35,7 @@ def move(globalMap, move):
 
 # 0, 1, 2, 3 - 동, 서, 남, 북
 def run(globalMap, dir, count):
-    if count == 4: return;
+    if count == 5: return;
     move(globalMap, dir);
 
     for i in range(4):
