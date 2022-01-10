@@ -292,3 +292,12 @@ from itertools import product
 arr = [1, 2, 3];
 product(arr, repeat = 2);
 ```
+
+#### Counter Module
+- dictionary 안쓰고 몇번 나왔는 지 알 수 있음
+```python
+from collections import Counter
+arr = [1, 1, 2, 2, 2, 3, 3, 3, 3];
+print(Counter(arr)) #Counter({1: 2, 2: 3, 3: 4})
+print(Counter(arr).most_common()) # counter값 많은 거부터 정렬
+```
