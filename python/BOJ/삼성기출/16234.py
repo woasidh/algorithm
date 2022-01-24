@@ -9,10 +9,6 @@ n, l, r = map(int, sys.stdin.readline().split());
 globalMap = [];
 for _ in range(n):
     globalMap.append(list(map(int, sys.stdin.readline().split())));
-
-# bfs로 갱신
-# play로
-
 dx = [0, 0, -1, 1];
 dy = [1, -1, 0, 0];
 
