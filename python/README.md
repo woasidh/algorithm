@@ -301,3 +301,10 @@ arr = [1, 1, 2, 2, 2, 3, 3, 3, 3];
 print(Counter(arr)) #Counter({1: 2, 2: 3, 3: 4})
 print(Counter(arr).most_common()) # counter값 많은 거부터 정렬
 ```
+
+#### inf 표현법
+```python
+import math
+print(math.inf);
+
+```
