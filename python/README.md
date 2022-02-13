@@ -308,3 +308,15 @@ import math
 print(math.inf);
 
 ```
+
+#### 정규식
+
+```python
+import re
+
+regex = '[a-zA-Z]+';
+re.match(regex, str)
+re.sub(regex, 'new-str', str)
+re.search(regex, str).group(1)
+re.findall(regex, str); # 배열로 반환
+```
