@@ -2,25 +2,11 @@ import sys
 
 n = int(sys.stdin.readline());
 nums = list(map(int, sys.stdin.readline().split()));
+dp = [1 for _ in range(n)];
 
-dp = [[0 for _ in range(n)] for i in range(n)];
+for i in range(1, n):
+    for j in range(i):
+        if nums[i] > nums[j]:
+            dp[i] = max(dp[i], dp[j] + 1);
 
-for start in range(n):
-    stack = [];
-    for i in range(start, n):
-        num = nums[i];
-        if not stack:
-            stack.append(num);
-            dp[start][i] = 1;
-        else:
-            if num > stack[-1]:
-                stack.append(num);
-                dp[start][i] = len(stack);
-            else:
-                stack = [num];
-                dp[start][i] = len(stack);
-
-for row in dp:
-    print(row);
-
-
+print(max(dp));
